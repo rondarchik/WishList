@@ -1,0 +1,392 @@
+.edit {
+  padding-bottom: 174px;
+}
+
+.edit__avatar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 113px;
+}
+
+.edit__avatar-image {
+  height: 437px;
+  width: 437px;
+  border-radius: 50%;
+  margin-right: 106px;
+  object-fit: cover;
+}
+
+.edit__avatar-load {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.edit__input-file {
+  display: none;
+}
+
+.edit__label-avatar {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  font-size: 38px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.edit__avatar-delete {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  font-size: 38px;
+}
+
+.edit__name {
+  display: flex;
+  gap: 36px;
+  margin-bottom: 44px;
+}
+
+.edit__label {
+  max-width: 700px;
+}
+
+.edit__label-text {
+  display: block;
+  font-size: 50px;
+  margin-bottom: 14px;
+}
+
+.edit__input {
+  font-size: 48px;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  color: #282828;
+  padding: 0 32px;
+  border: none;
+}
+
+.edit__birthdate {
+  margin-bottom: 44px;
+}
+
+.edit__birthday-wrapper {
+  display: flex;
+  gap: 12px;
+}
+
+.edit__label_select {
+  position: relative;
+}
+
+.edit__label_select:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  background-image: url('../img/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.edit__label_select:focus-within::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.edit__select {
+  appearance: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 48px;
+  color: #282828;
+  background-color: #FFFFFF;
+  padding: 22px 50px 22px 32px;
+  outline: none;
+}
+
+.edit__description {
+  margin-bottom: 68px;
+}
+
+.edit__description-input {
+  max-width: 1420px;
+  width: 100%;
+  min-height: 250px;
+  font-size: 38px;
+  padding: 35px 32px;
+  resize: none;
+  background: #FFFFFF;
+  border: 3px solid #365ABA;
+  border-radius: 15px;
+}
+
+.edit__submit-btn {
+  margin-right: 22px;
+}
+
+.edit__submit-btn:last-child {
+  margin-right: 0;
+}
+
+.edit__wish {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(288px, 700px));
+  gap: 44px 36px;
+  margin-bottom: 44px;
+
+}
+
+.edit__label_price {
+  flex: 0 1 50%;
+}
+
+.edit__wish-price {
+  display: flex;
+  gap: 36px;
+  align-items: flex-end;
+}
+
+.edit__select_currency {
+  width: 100%;
+}
+
+.edit__wish-photo {
+  width: 285px;
+  height: 285px;
+  margin-bottom: 152px;
+  position: relative;
+}
+
+.edit__label-photo {
+  position: relative;
+  cursor: pointer;
+}
+
+.edit__wish-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: #FFFFFF;
+  border-radius: 15px;
+}
+
+.edit__wish-delete {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+@media (max-width: 1200px) {
+  .edit__avatar {
+    margin-bottom: 56px;
+  }
+
+  .edit__avatar-image {
+    width: 466px;
+    height: 466px;
+    margin-right: 34px;
+  }
+
+  .edit__name {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+
+  .edit__birthdate {
+    margin-bottom: 40px;
+  }
+
+  .edit__description-input {
+    min-height: 311px;
+  }
+
+  .edit__description {
+    margin-bottom: 40px;
+  }
+
+  .edit__wish {
+    grid-template-columns: 1fr;
+  }
+
+  .edit__label {
+    max-width: 694px;
+  }
+
+  .edit__submit-btn {
+    margin-right: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .edit {
+    padding-bottom: 80px;
+  }
+
+  .edit__avatar {
+    margin-bottom: 64px;
+  }
+
+  .edit__avatar-image {
+    width: 340px;
+    height: 340px;
+    margin-right: 25px;
+  }
+
+  .edit__icon-avatar {
+    flex: 0 0 30px;
+  }
+
+  .edit__label-avatar {
+    font-size: 24px;
+    gap: 5px;
+  }
+
+  .edit__avatar-delete {
+    font-size: 24px;
+    gap: 5px;
+  }
+
+
+
+  .edit__name {
+    gap: 44px;
+    margin-bottom: 44px;
+  }
+
+  .edit__birthdate {
+    margin-bottom: 44px;
+  }
+
+  .edit__description-input {
+    min-height: 503px;
+  }
+
+  .edit__description {
+    margin-bottom: 62px;
+  }
+
+  .edit__wish-photo {
+    margin-bottom: 62px;
+  }
+
+  .edit__submit-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px 18px;
+  }
+}
+
+@media (max-width: 740px) {
+  .edit {
+    padding-top: 16px;
+    padding-bottom: 46px;
+  }
+
+  .edit__avatar {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+
+  .edit__avatar-image {
+    width: 160px;
+    height: 160px;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .edit__icon-avatar {
+    flex-basis: 16px;
+
+  }
+
+  .edit__label-avatar {
+    font-size: 14px;
+    gap: 6px;
+    justify-content: center;
+  }
+
+  .edit__avatar-delete {
+    font-size: 14px;
+    gap: 6px;
+    justify-content: center;
+  }
+
+  .edit__avatar-load {
+    align-items: center;
+  }
+
+  .edit__input {
+    font-size: 20px;
+    height: 47px;
+    padding: 0 18px;
+  }
+
+  .edit__label-text {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .edit__name {
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .edit__birthdate {
+    margin-bottom: 24px;
+  }
+
+  .edit__description-input {
+    min-height: 288px;
+  }
+
+  .edit__description {
+    margin-bottom: 24px;
+  }
+
+  .edit__select {
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 12px 27px 12px 18px;
+  } 
+
+  .edit__label_select:after {
+    width: 18px;
+    height: 18px;
+  }
+
+  .edit__wish{
+    gap: 24px;
+  }
+
+  .edit__select_currency {
+    border-radius: 15px;
+  }
+
+  .edit__wish-price {
+    gap: 14px;
+  }
+
+  .edit__wish-photo {
+    width: 288px;
+    height: 288px;
+    margin-bottom: 32px;
+  }
+
+
+  .edit__submit-wrapper {
+    gap: 24px;
+  }
+}

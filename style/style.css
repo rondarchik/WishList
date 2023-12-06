@@ -1,0 +1,133 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  background: #365ABA;
+  color: #FFFFFF;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.container {
+  max-width: 1792px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  font-size: 34px;
+  text-transform: capitalize;
+  color: #365ABA;
+}
+
+.btn_castling {
+  background: #365ABA;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1700px) {
+  .container {
+    padding: 0 32px;
+  }
+
+  .btn {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 22px;
+  }
+
+  .btn {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 34px;
+  }
+}
+
+@media (max-width: 740px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+
+  .btn_castling {
+    font-size: 24px;
+  }
+}

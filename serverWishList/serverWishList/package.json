@@ -1,0 +1,28 @@
+{
+  "name": "server-wish",
+  "version": "1.0.0",
+  "description": "API server server-wish",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "lint": "eslint . --fix"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "jsonwebtoken": "^9.0.0",
+    "sharp": "^0.32.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.22",
+    "prettier": "2.8.6"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
